@@ -1,0 +1,79 @@
+public class Main {
+package todolist;
+import java.util.ArrayList;
+import java.util.Scanner;
+        public static void main(String[] args){
+            Scanner sc = new Scanner(System.in)
+            TodoList todoList = new ToDoList();
+            int Choice;
+            int id = 0;
+
+
+            do {
+                System.out.println(" ------ To Do List Menu -------");
+                System.out.println(" [1]. Add Task");
+                System.out.println(" [2]. View All Task ");
+                System.out.println(" [3]. View  all done task");
+                System.out.println(" [4]. View Pending Task");
+                System.out.println(" [5]. Mark Task as Done");
+                System.out.println(" [6]. Edit Task");
+                System.out.println(" [7]. Delete Task");
+                System.out.println(" [8]. Exit");
+                System.out.println(" [9}. Enter your choice: ");
+
+                choice = sc.nextInt();
+                sc.nextLine();
+
+
+                switch (choice) { //Switch = statement that allows a program to execute different
+                    //  blocks of code based on the value of a variable
+
+                    case 1 -> System.out.println("Enter task description: ");
+                    String toDoList = sc.nextLine();
+                    manager.addList(toDoList);
+                    System.out.println("Task added!");
+                    break;
+
+
+                    case 2 -> System.out.println("Your Tasks");
+                    if (tast,isEmpty()){
+                        System.out.print("No tasks yet. ");
+                    } else[
+                    for (int i = 0; i < task.size(); i++) {
+                    }
+					]
+                    manager.showAllTasks();
+                    break;
+
+                    case 3 -> manager.showaDoneTasks();
+                    break;
+
+                    case 4 -> manager.showPendingTask();
+                    break;
+
+                    case 5 -> manager.showAllTasks();
+                    System.out.println("Enter task number to mark as done: ");
+                    int doneNum = sc.nextInt();
+                    todo.markTaskDone(doneNum);
+                    break;
+
+                    case 6 -> manager.showAllTasks
+                    System.out.println(" Enter task number to edit: ");
+                    int editNum sc.nextInt();
+                    String todoList = sc.nextLine();
+                    todo.editTask(editNum);
+                    break;
+
+                    case 7 -> System.out.println(" Enter id to Delete: ");
+                    id = sc.nextInt();
+                    System.out.println("Inout must a number");
+                    manager.deleteListById(id);
+
+
+                    case 8 -> System.out.println("Goodbye! ");
+                    break;
+                }
+            }
+        }
+    }
+
